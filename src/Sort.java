@@ -47,7 +47,12 @@ public class Sort {
         }
     }
 
-    //向下调整法，前提是左右子堆均为大顶堆
+    /**
+     * 向下调整为大顶堆，需要左右子堆均为大顶堆
+     * @param nums 堆数组
+     * @param i 堆顶下标
+     * @param j 堆边界
+     */
     private static void adjust(int[] nums,int i,int j){
         //左子堆
         int l=2*i+1;

@@ -39,8 +39,13 @@ public class KMP {
         }
         return list;
     }
-    
-    //模式串next数组存储匹配失败后重新匹配的起点，s.substring(0,next[i])与s.substring(i-next[i],i)相同
+
+    /**
+     * 获取模式串next数组
+     * 模式串next数组存储匹配失败后重新匹配的起点，s.substring(0,next[i])与s.substring(i-next[i],i)相同
+     * @param s
+     * @return next数组
+     */
     private static int[] getNext(String s){
         int m=s.length();
         int[] next=new int[m+1];
