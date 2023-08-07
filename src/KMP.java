@@ -43,7 +43,7 @@ public class KMP {
     /**
      * 获取模式串next数组
      * 模式串next数组存储匹配失败后重新匹配的起点，s.substring(0,next[i])与s.substring(i-next[i],i)相同
-     * @param s
+     * @param s 模式串
      * @return next数组
      */
     private static int[] getNext(String s){
