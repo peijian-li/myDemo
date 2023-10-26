@@ -94,7 +94,7 @@ public class SkipList {
             }
             cur=cur.down;
         }
-        //next为第一层值大于等于val的第一个节点
+        //cur.next为第一层值大于等于val的第一个节点
         cur=cur.next;
         //返回满足值小于end的节点
         while(cur!=null&&cur.val<=end){
